@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
@@ -17,29 +21,34 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <h1>Tokyo</h1>
-          <ul>
-            <li>Sunday 06:00</li>
-            <li>Clear</li>
-          </ul>
-          <div class="row">
-            <div class="col-md-6">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                alt="Clear"
-              />
-              10°C | °F
-            </div>
-            <div class="col-md-6">
-              <ul>
-                <li>Wind: 3 km/h</li>
-                <li>Humidity: 69%</li>
-                <li>Precipitation: 0%</li>
-              </ul>
+          <div class="overview">
+            <h1><strong>Tokyo</strong></h1>
+            <ul>
+              <li>Sunday 06:00</li>
+              <li>Clear</li>
+            </ul>
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix weather-temperature">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                    alt="Clear"
+                    width="85"
+                  />
+                  <strong>10</strong> <span class="units">°C | <a href="#">°F</a></small></span>
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li><strong>Wind</strong>: 3 km/h</li>
+                  <li><strong>Humidity</strong>: 69%</li>
+                  <li><strong>Precipitation</strong>: 0%</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <small id="source">
+        <small>
           <a
             href="https://github.com/maichan-13/weather-app-project"
             target="_blank"

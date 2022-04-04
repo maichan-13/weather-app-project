@@ -9,6 +9,7 @@ h1 {
   font-size: 280px;
   margin-bottom: 0;
   padding-left: 30px;
+  color: #96c492;
 }
 
 ul {
@@ -25,6 +26,10 @@ li {
   text-align: left;
 }
 
+.weather-info strong {
+  color: #96c492;
+}
+
 li:first-letter {
   text-transform: capitalize;
 }
@@ -36,6 +41,7 @@ li:first-letter {
 
 .weather-app {
   padding: 20px;
+  border: 3px solid #96c492;
   border-radius: 5px;
   outline: black;
   background: black;
@@ -75,4 +81,22 @@ li:first-letter {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+input[type="search"] {
+  padding: 5px;
+  color: black;
+  border: black;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  padding: 5px;
+  background-color: #96c492;
+  border: black;
+}
+
+input[type="submit"]:hover {
+  background-color: #598556;
+  color: black;
 }

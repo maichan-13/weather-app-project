@@ -8,7 +8,7 @@ body {
 h1 {
   font-size: 280px;
   margin-bottom: 0;
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 ul {
@@ -65,5 +65,14 @@ li:first-letter {
 }
 
 .weather-temperature a {
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: white;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
   text-decoration: none;
 }

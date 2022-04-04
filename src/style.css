@@ -23,18 +23,18 @@ li {
   font-size: 18px;
   line-height: 19px;
   text-align: left;
+  text-transform: capitalize;
 }
 
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
-  display: block;
 }
 
 .weather-app {
   padding: 20px;
-  border: 1px solid rgb(242, 151, 229);
   border-radius: 5px;
+  outline: black;
   background: black;
   color: white;
   font-family: "Be Vietnam Pro", sans-serif;

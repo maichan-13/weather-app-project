@@ -53,13 +53,13 @@ function search(city) {
   axios.get(apiUrl).then(displayTemperature);
 }
 
-function formSubmit(event) {
+function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
 
-function displayFahreheitTemperature(event) {
+function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
 
@@ -72,7 +72,6 @@ function displayFahreheitTemperature(event) {
 function displayCelsiusTemperature(event) {
   event.preventDeafult();
   celsiusLink.classList.add("active");
-
   fahrenheitLink.classList.remove("active");
   let temperatureElement = docmuent.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
@@ -81,12 +80,12 @@ function displayCelsiusTemperature(event) {
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", formSubmit);
+form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahreheitTemperature);
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayFahreheitTemperature);
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Tokyo");

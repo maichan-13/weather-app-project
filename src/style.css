@@ -9,7 +9,7 @@ h1 {
   font-size: 280px;
   margin-bottom: 0;
   padding-left: 30px;
-  color: #96c492;
+  color: #7db3d7;
 }
 
 ul {
@@ -20,6 +20,7 @@ ul {
 li {
   list-style: none;
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
   font-size: 18px;
   line-height: 19px;
@@ -27,7 +28,7 @@ li {
 }
 
 .weather-info strong {
-  color: #96c492;
+  color: #7db3d7;
 }
 
 li:first-letter {
@@ -41,7 +42,7 @@ li:first-letter {
 
 .weather-app {
   padding: 20px;
-  border: 3px solid #96c492;
+  border: 3px solid #7db3d7;
   border-radius: 5px;
   outline: black;
   background: black;
@@ -92,13 +93,12 @@ input[type="search"] {
 
 input[type="submit"] {
   padding: 5px;
-  background-color: #96c492;
+  background-color: #7db3d7;
   border: black;
 }
 
 input[type="submit"]:hover {
-  background-color: #598556;
-  color: black;
+  background-color: #0b4a74;
 }
 
 .weather-forecast {
@@ -108,7 +108,7 @@ input[type="submit"]:hover {
 
 .weather-forecast-date {
   font-size: 20px;
-  color: #96c492;
+  color: #7db3d7;
 }
 
 .weather-forecast-temperature {
@@ -116,5 +116,5 @@ input[type="submit"]:hover {
 }
 
 .weather-forecast-temperature-min {
-  color: #bfddbc;
+  color: #c3e3f8;
 }
